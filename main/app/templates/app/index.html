@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block title %}
+    Блог
+{% endblock %}
+
+{% block content %}
+    {% for post in posts %}
+        <p>{{ post.title }}</p>
+        <!--<p></p>-->
+    {% endfor %}
+{% endblock %}
